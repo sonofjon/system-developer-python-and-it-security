@@ -1,0 +1,25 @@
+Use the following info to make a table about Country GDP
+
+Source for data:
+https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(nominal)
+
+Make a table with HTML consisting of 3 columns:
+Country Name
+Country Flag
+GDP (millinos of USD)
+
+Your table will have 3 rows.
+
+Use info:
+
+United States
+US flag: (image link)
+GDP: 20,000,000
+
+India:
+indian flag (image link)
+GDP: 2000000000
+
+United Kingdom
+UK flag (img link)
+GDP: 6000000000
