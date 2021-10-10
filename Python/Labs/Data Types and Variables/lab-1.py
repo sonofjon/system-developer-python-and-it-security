@@ -39,11 +39,7 @@ print(elevator(10, 5))
 # Lab 1.4
 """
 def sum_ascii(chars):
-    sum = 0
-    for c in chars:
-        sum = sum + ord(c)
-        # print(sum)
-    return sum
+    return sum(ord(c) for c in chars)
 
 # chars = "AbCdE"
 chars = "SoftUniRulzz"
