@@ -42,7 +42,11 @@ def sum_ascii(chars):
     return sum(ord(c) for c in chars)
 
 # chars = "AbCdE"
-chars = "SoftUniRulzz"
+# chars = "SoftUniRulzz"
+
+n = int(input("Input number of lines, and characters to sum, each input on a separate line (followed by RETURN):\n"))
+chars = "".join(input() for _ in range(n))
+
 print("The sum equals:", sum_ascii(chars))
  """
 
@@ -51,11 +55,14 @@ print("The sum equals:", sum_ascii(chars))
 def print_ascii(char):
     print(ord(ascii))
 
-n, m = (60, 65)
+# n, m = (60, 65)
 # n, m = (69, 79)
 # n, m = (97, 104)
 # n, m = (40, 55)
 
-for i in range(n, m+1):
+start = int(input("Input first ASCII character index: "))
+stop = int(input("Input last ASCII character index: "))
+
+for i in range(start, stop+1):
     print(chr(i), end="")
 print("")
