@@ -6,4 +6,5 @@ def index(request):
     return render(request, "app_two/index.html")
 
 def help(request):
-    return render(request, "app_two/help.html")
+    context = {"body": "Help Page"}
+    return render(request, "app_two/help.html", context)
