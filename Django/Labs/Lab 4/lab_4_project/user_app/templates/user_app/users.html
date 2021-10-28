@@ -7,15 +7,15 @@
     <title>Users</title>
 </head>
 <body>
-    {% for user in ??? %}
         User Info:
         <ol>
             <ul>
-                <li>First Name: {{ ??? }}</li>
-                <li>Last Name: {{ ??? }}</li>
-                <li>Eamil: {{ ??? }} </li>
             </ul>
         </ol>
     {% endfor %}
+        {% for user in users %}
+            <li>First Name: {{ user.first_name }}</li>
+            <li>Last Name: {{ user.last_name }}</li>
+            <li>Email: {{ user.email }} </li>
 </body>
 </html>
