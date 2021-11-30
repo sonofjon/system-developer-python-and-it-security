@@ -1,5 +1,5 @@
 import socket
-import threading
+# import threading
 
 HEADER = 64
 PORT = 5050
@@ -36,9 +36,10 @@ def start(server):
     print(f"[LISTENING] Server is listening on {server_name}")
     while True:
         conn, addr = server.accept()
-        thread = threading.Thread(target=handle_client, args=(conn, addr))
-        thread.start()
-        print(f"[ACTIVE CONNECTIONS] {threading.activeCount() - 1}")
+        handle_client(conn, addr)
+        # thread = threading.Thread(target=handle_client, args=(conn, addr))
+        # thread.start()
+        # print(f"[ACTIVE CONNECTIONS] {threading.activeCount() - 1}")
 
 
 print("[STARTING] server is starting...")
