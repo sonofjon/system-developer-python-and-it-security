@@ -5,10 +5,10 @@ PORT = 5050
 FORMAT = 'utf-8'
 DISCONNECT_MESSAGE = "!DISCONNECT"
 SERVER = "192.168.10.143"
-ADDR = (SERVER, PORT)
 
+addr = (SERVER, PORT)
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-client.connect(ADDR)
+client.connect(addr)
 
 def send(msg):
     message = msg.encode(FORMAT)
